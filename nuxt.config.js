@@ -52,7 +52,7 @@ export default {
     redirect: {
       login: "/login",
       logout: "/login",
-      callback: "/admin",
+      //  callback: "/login",
       home: "/admin",
     },
     plugins: ["~/plugins/auth.js"],
