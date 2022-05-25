@@ -1,28 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div>
-    <div v-if="!$auth.loggedIn">
-
-    <input type="text" placeholder="user" v-model="username" />
-    <input type="text" placeholder="password" v-model="password" />
-    <button @click="loginUser">login</button>
-    </div>
-    <div v-if="$auth.loggedIn">
-      you are logged in
-      <p>
-        hello {{$auth.user.name}}
-      </p>
-    </div>
-    <div v-else>
-      please log in
-
-    </div>
-    <div v-if="$auth.loggedIn">
-      <button @click="$auth.logout()">
-        logout
-      </button>
-    </div>
-
+    <h1 style="color:black">home page</h1>
 
     <div>
       <button @click="fetch()">
@@ -40,35 +19,13 @@ export default {
 
   data: () => ({
 
-      username: "",
-      password: "",
+
       fUser : ''
 
   }),
 
   methods: {
-   async loginUser() {
-      console.log('clicked');
 
-      try{
-
-          let res = await  this.$auth.loginWith("cookie",
-        {
-          data : {
-           username :   this.username,
-           password :  this.password
-          }
-        });
-
-
-      }catch(e){
-          console.log(e);
-      }
-
-
-
-
-    },
 
    async fetch(){
 

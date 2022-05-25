@@ -49,12 +49,13 @@ export default {
   // },
 
   auth: {
-    // redirect: {
-    //   login: "/login",
-    //   logout: "/login",
-    //   callback: "/login",
-    //   home: false,
-    // },
+    redirect: {
+      login: "/login",
+      logout: "/login",
+      callback: "/admin",
+      home: "/admin",
+    },
+    plugins: ["~/plugins/auth.js"],
     strategies: {
       local: false,
       cookie: {

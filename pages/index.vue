@@ -4,6 +4,11 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+
+ mounted () {
+     console.log(this.$auth);
+ }
+
 }
 </script>

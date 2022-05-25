@@ -1,10 +1,10 @@
 <template>
-  <h1>admin page</h1>
+  <h1 style="color:black">admin page</h1>
 </template>
 <script>
 export default {
 
-    middleware: 'auth-custom'
-    
+
+
 }
 </script>
